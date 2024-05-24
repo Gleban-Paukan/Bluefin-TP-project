@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мобильное Меню Ресторана</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<h1>Меню Ресторана</h1>
+
+<div id="category-name">
+    <h2 class="category-title">Сеты</h2>
+</div>
+
+<div id="menu">
+    <!-- Примеры блюд -->
+    <div class="menu-item" data-name="Сет №1" data-price="8290" data-image-path="set_1.png">
+        <img src="static/images/set_1.png" alt="Сет №1">
+        <span>Сет №1 — 8 290 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет №1" data-price="8290" data-image-path="set_1.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет №2" data-price="5690" data-image-path="set_2.png">
+        <img src="static/images/set_2.png" alt="Сет №2">
+        <span>Сет №2 — 5 690 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет №2" data-price="5690" data-image-path="set_2.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет №3    " data-price="8400" data-image-path="set_3.png">
+        <img src="static/images/set_3.png" alt="Сет №3">
+        <span>Сет №3 — 8 400 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет №3" data-price="8400" data-image-path="set_3.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет №4    " data-price="6720" data-image-path="set_4.png">
+        <img src="static/images/set_4.png" alt="Сет №4">
+        <span>Сет №4 — 6 720 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет №4" data-price="6720" data-image-path="set_4.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет Два сердца №1" data-price="6430" data-image-path="set_heart_1.png">
+        <img src="static/images/set_heart_1.png" alt="Сет Два сердца №1">
+        <span>Сет 'Два сердца' №1 — 6 430 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет Два сердца №1" data-price="6430"
+                data-image-path="set_heart_2.png" onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет Два сердца №2" data-price="7030" data-image-path="set_heart_2.png">
+        <img src="static/images/set_heart_2.png" alt="Сет Два сердца №2">
+        <span>Сет 'Два сердца' №2 — 7 030 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет Два сердца №2" data-price="7030"
+                data-image-path="set_heart_2.png" onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+
+    <!-- Добавьте больше блюд здесь -->
+</div>
+<div id="category-name">
+    <h2 class="category-title">Горячие блюда</h2>
+</div>
+<div id="menu">
+    <div class="menu-item" data-name="Сибас" data-price="1290" data-image-path="Sibas.png">
+        <img src="static/images/Sibas.png" alt="Сибас">
+        <span>Сибас - 1 290 ₽</span>
+        <button class="add-to-cart-button" data-name="Сибас" data-price="1290" data-image-path="Sibas.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Дорадо" data-price="1390" data-image-path="Dorado.png">
+        <img src="static/images/Dorado.png" alt="Дорадо">
+        <span>Дорадо - 1 390 ₽</span>
+        <button class="add-to-cart-button" data-name="Дорадо" data-price="1390" data-image-path="Dorado.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Фаланги камчатского краба запеченные с сыром Грюйер" data-price="2390"
+         data-image-path="crab_fingers.png">
+        <img src="static/images/crab_fingers.png" alt="Фаланги камчатского краба запеченные с сыром Грюйер">
+        <span>Фаланги камчатского краба запеченные с сыром 'Грюйер' - 2 390 ₽</span>
+        <button class="add-to-cart-button" data-name="Фаланги камчатского краба запеченные с сыром Грюйер"
+                data-price="2390" data-image-path="crab_fingers.png" onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Гедза ручной лепки с тигровыми креветками" data-price="1190"
+         data-image-path="Gedza.png">
+        <img src="static/images/Gedza.png" alt="Гедза ручной лепки с тигровыми креветками">
+        <span>Гедза ручной лепки с тигровыми креветками - 1 190 ₽</span>
+        <button class="add-to-cart-button" data-name="Гедза ручной лепки с тигровыми креветками" data-price="1190"
+                data-image-path="Gedza.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+</div>
+<div id="category-name">
+    <h2 class="category-title">Bluefin Gold</h2>
+</div>
+<div id="menu">
+    <div class="menu-item" data-name="Сет роллы Голд" data-price="39990" data-image-path="set_rolls_gold.png">
+        <img src="static/images/set_rolls_gold.png" alt="Сет роллы Голд">
+        <span>Сет роллы Голд - 39 990 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет роллы Голд" data-price="39990" data-image-path="set_rolls_gold.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Сет сашими Голд" data-price="42350" data-image-path="Set_sashimi_gold.png">
+        <img src="static/images/Set_sashimi_gold.png" alt="Сет сашими Голд">
+        <span>Сет сашими Голд - 42 350 ₽</span>
+        <button class="add-to-cart-button" data-name="Сет сашими Голд" data-price="42350"
+                data-image-path="Set_sashimi_gold.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Ролл Калифорния Голд" data-price="5530"
+         data-image-path="roll_kalifornia_gold.png">
+        <img src="static/images/roll_kalifornia_gold.png" alt="Ролл Калифорния Голд">
+        <span>Ролл Калифорния Голд - 5 530 ₽</span>
+        <button class="add-to-cart-button" data-name="Ролл Калифорния Голд" data-price="5530"
+                data-image-path="roll_kalifornia_gold.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+    <div class="menu-item" data-name="Ролл Филадельфия Голд" data-price="3490"
+         data-image-path="roll_filadelfia_gold.png">
+        <img src="static/images/roll_filadelfia_gold.png" alt="Ролл Филадельфия Голд">
+        <span>Ролл Филадельфия Голд - 3 490 ₽</span>
+        <button class="add-to-cart-button" data-name="Ролл Филадельфия Голд" data-price="3490"
+                data-image-path="roll_filadelfia_gold.png"
+                onclick="addItemToCart(this)">Добавить в корзину
+        </button>
+    </div>
+</div>
+
+<div id="cart-container"></div> <!-- Контейнер для корзины -->
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>
